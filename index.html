@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orlando Brewery Trail Checklist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand-mark">OB</div>
+      <div>
+        <p class="eyebrow">Orlando, Florida</p>
+        <h1>Orlando Brewery Trail</h1>
+      </div>
+    </nav>
+
+    <section class="hero-card">
+      <div>
+        <p class="badge">Checklist Web App</p>
+        <h2>Track every brewery stop, save notes, and build your own Orlando beer trail.</h2>
+        <p class="hero-copy">
+          Check off breweries as you visit them. Your progress saves automatically on this device.
+        </p>
+      </div>
+
+      <div class="stats-card" aria-live="polite">
+        <span id="visitedCount">0</span>
+        <p>visited</p>
+        <small id="progressLabel">0% complete</small>
+      </div>
+    </section>
+
+    <div class="progress-wrap" aria-label="Checklist progress">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls-panel">
+      <label class="search-label" for="searchInput">Search breweries</label>
+      <input id="searchInput" type="search" placeholder="Try Milk District, Lake Nona, food, airport..." />
+
+      <div class="filter-row" aria-label="Brewery filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="orlando">Orlando</button>
+        <button class="filter-btn" data-filter="bonus">Nearby Bonus</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="visited">Visited</button>
+        <button class="filter-btn" data-filter="unvisited">Not Yet</button>
+      </div>
+    </section>
+
+    <section class="summary-grid">
+      <article>
+        <span id="totalCount">0</span>
+        <p>Total stops</p>
+      </article>
+      <article>
+        <span id="orlandoCount">0</span>
+        <p>Orlando stops</p>
+      </article>
+      <article>
+        <span id="bonusCount">0</span>
+        <p>Nearby bonus</p>
+      </article>
+    </section>
+
+    <section class="notice">
+      <strong>Quick note:</strong> Hours, food options, and special releases change often. Always check the brewery before driving over. Please enjoy responsibly and use a designated driver or rideshare.
+    </section>
+
+    <section id="breweryList" class="brewery-list" aria-label="Orlando brewery checklist"></section>
+
+    <section class="actions">
+      <button id="exportBtn" class="primary-action">Export My Checklist</button>
+      <button id="resetBtn" class="danger-action">Reset Progress</button>
+    </section>
+  </main>
+
+  <dialog id="exportDialog">
+    <form method="dialog">
+      <h3>Your Orlando Brewery Checklist</h3>
+      <p>Copy this list into Notes, Messages, or a trip plan.</p>
+      <textarea id="exportText" readonly></textarea>
+      <div class="dialog-actions">
+        <button id="copyBtn" type="button">Copy</button>
+        <button value="close">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer>
+    <p>Made for brewery hopping around Orlando, FL. 🍻</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
