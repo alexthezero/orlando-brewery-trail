@@ -1,0 +1,20 @@
+@media (hover: none), (pointer: coarse) {
+  .brewery-card:hover {
+    transform: none !important;
+    border-color: rgba(143, 188, 230, 0.22) !important;
+  }
+
+  .brewery-card:focus,
+  .brewery-card:focus-within,
+  .brewery-card:active {
+    border-color: rgba(143, 188, 230, 0.22) !important;
+  }
+
+  .brewery-card.visited,
+  .brewery-card.visited:hover,
+  .brewery-card.visited:focus,
+  .brewery-card.visited:focus-within,
+  .brewery-card.visited:active {
+    border-color: rgba(143, 188, 230, 0.22) !important;
+  }
+}
