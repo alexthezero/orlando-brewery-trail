@@ -1,0 +1,45 @@
+.mode-switcher {
+  width: min(980px, calc(100% - 44px));
+  margin: 18px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: rgba(29, 25, 20, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px;
+  box-shadow: var(--shadow);
+}
+
+.mode-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 14px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: #241708;
+}
+
+.pub-source-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  .mode-switcher {
+    width: min(980px, calc(100% - 32px));
+    margin-top: 14px;
+  }
+
+  .mode-btn {
+    padding: 12px 10px;
+  }
+}
