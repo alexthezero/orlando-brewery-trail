@@ -1,0 +1,10 @@
+.mode-switcher {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 430px) {
+  .mode-btn {
+    font-size: 0.88rem;
+    padding: 11px 7px;
+  }
+}
