@@ -1,0 +1,116 @@
+@media (max-width: 720px) {
+  .hero {
+    padding: 16px 18px 18px;
+  }
+
+  .topbar {
+    margin-bottom: 16px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+  }
+
+  .eyebrow,
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-card {
+    padding: 18px;
+    border-radius: 24px;
+    gap: 14px;
+  }
+
+  .hero-card h2 {
+    font-size: clamp(1.65rem, 8vw, 2.55rem);
+    line-height: 1.02;
+    margin-bottom: 12px;
+  }
+
+  .hero-copy {
+    font-size: 0.98rem;
+    line-height: 1.48;
+  }
+
+  .stats-card {
+    min-height: 92px;
+    border-radius: 22px;
+    padding: 12px;
+  }
+
+  .stats-card span {
+    font-size: 2.45rem;
+  }
+
+  .progress-wrap {
+    margin-top: 12px;
+    height: 10px;
+  }
+
+  .mode-switcher {
+    margin-top: 14px;
+    padding: 7px;
+    gap: 7px;
+  }
+
+  .mode-btn {
+    font-size: 0.95rem;
+    line-height: 1;
+    padding: 13px 6px;
+    white-space: nowrap;
+  }
+
+  .container {
+    width: min(980px, calc(100% - 28px));
+    margin-top: 18px;
+  }
+
+  .controls-panel {
+    padding: 15px;
+  }
+
+  .search-label {
+    font-size: 1.05rem;
+  }
+
+  #searchInput {
+    padding: 12px 13px;
+    border-radius: 15px;
+  }
+
+  .filter-row {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 10px 12px;
+  }
+
+  .summary-grid article {
+    padding: 14px;
+  }
+
+  .summary-grid span {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .mode-btn {
+    font-size: 0.86rem;
+    padding: 12px 4px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.85rem;
+  }
+}
